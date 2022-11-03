@@ -1,0 +1,64 @@
+p {
+  font-family: Lato;
+}
+
+.header {
+  height: 60px;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.parent-container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* Bottom */
+
+.bottom-dock.parent-container {
+  flex-direction: column;
+}
+
+.bottom-dock.parent-container > .image-container {
+  height: calc(100% - 150px);
+  display: grid;
+  place-items: center;
+  background-color: aliceblue;
+}
+
+.bottom-dock.parent-container > .thumbnail-container {
+  height: 150px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.bottom-dock.parent-container > .thumbnail-container > img:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* Right */
+
+.right-dock.parent-container {
+  flex-direction: row;
+}
+
+.right-dock.parent-container > .image-container {
+  width: calc(100% - 150px);
+  display: grid;
+  place-items: center;
+  background-color: aliceblue;
+}
+
+.right-dock.parent-container > .thumbnail-container {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.right-dock.parent-container > .thumbnail-container > img:not(:last-child) {
+  margin-bottom: 1rem;
+}

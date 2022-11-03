@@ -1,0 +1,40 @@
+<nz-layout>
+  <div class="container">
+    <div class="header">
+      <button nz-button nzType="primary" (click)="setDockPosition('right')">
+        Dock Right
+      </button>
+      <button nz-button nzType="primary" (click)="setDockPosition('bottom')">
+        Dock Bottom
+      </button>
+    </div>
+
+    <div
+      [ngClass]="{
+        'bottom-dock': dockPosition === 'bottom',
+        'right-dock': dockPosition === 'right',
+        'parent-container': true
+      }"
+    >
+      <div class="image-container">
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+      </div>
+
+      <div class="thumbnail-container">
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+        <img src="https://www.w3schools.com/css/paris.jpg" alt="img" />
+      </div>
+    </div>
+  </div>
+</nz-layout>
